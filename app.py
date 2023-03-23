@@ -195,7 +195,7 @@ def analyze_api():
     os.remove('file2.png')
     return send_file(image_output, mimetype='image/pmg')
     # return {"ssim_output": image_output, "score": score*100}
-
+    # return {"score": score*100}
 @app.route('/image')
 def serve_image():
     # Assuming the image file is named "image.png" and located in the same directory as your Flask app
